@@ -1,0 +1,46 @@
+# Arquivos de configuração
+appsettings.Development.json
+appsettings.Production.json
+Properties/launchSettings.json
+
+# Build e artefatos de publicação
+bin/
+obj/
+out/
+
+# Diretórios do Visual Studio e IDEs
+.vscode/
+.vs/
+.idea/
+
+# Arquivos de log
+*.log
+
+# Sistema de controle de pacotes
+**/packages/
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+
+# Arquivos de usuário e cache do Visual Studio
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Cache, Teste, e Temporários
+TestResults/
+*.tmpproj
+*.tmp
+*.temp
+*.sln.cache
+
+# Arquivos locais do Docker e Compose
+docker-compose.override.yml
+
+# Outros arquivos temporários e de sistema
+*.dbmdl
+*.jfm
+*.bak
+.DS_Store
