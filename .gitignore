@@ -1,46 +1,48 @@
-# Arquivos de configura��o
-appsettings.Development.json
-appsettings.Production.json
-Properties/launchSettings.json
+# Arquivos de configuração
+appsettings.json
+appsettings.*.json
 
-# Build e artefatos de publica��o
+# Build e artefatos de publicação
 bin/
 obj/
 out/
 
-# Diret�rios do Visual Studio e IDEs
+# Diretórios do Visual Studio
 .vscode/
 .vs/
-.idea/
 
 # Arquivos de log
 *.log
 
 # Sistema de controle de pacotes
 **/packages/
+# Usado pelo NuGet
 *.nupkg
 *.snupkg
+# Arquivos de bloqueio do NuGet e dependências
 project.lock.json
 project.fragment.lock.json
 
-# Arquivos de usu�rio e cache do Visual Studio
+# Arquivos de usuário do Visual Studio
 *.user
 *.suo
 *.userosscache
 *.sln.docstates
 
-# Cache, Teste, e Tempor�rios
+# Arquivos de Cache, Teste, e temporários
 TestResults/
 *.tmpproj
 *.tmp
 *.temp
 *.sln.cache
 
+# Configuração do Rider
+.idea/
+
 # Arquivos locais do Docker e Compose
 docker-compose.override.yml
 
-# Outros arquivos tempor�rios e de sistema
+# Outros arquivos de configuração temporários
 *.dbmdl
 *.jfm
-*.bak
 .DS_Store
