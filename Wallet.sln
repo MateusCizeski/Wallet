@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wallet", "Wallet.csproj", "{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wallet", "Wallet.csproj", "{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{19721973-A2B8-4408-85F7-AB4E4DC612EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{19721973-A2B8-4408-85F7-AB4E4DC612EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{7DD5F1A0-BAB0-41AC-BEF9-33E285FC5D40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{7DD5F1A0-BAB0-41AC-BEF9-33E285FC5D40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{89BDA67B-2F25-4D23-8BFC-699FD5F17832}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Services.csproj", "{89BDA67B-2F25-4D23-8BFC-699FD5F17832}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{36A7730C-BF8B-4948-971B-A17618F00472}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{36A7730C-BF8B-4948-971B-A17618F00472}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra", "Infra\Infra.csproj", "{F1053DC2-1EA6-4605-B2E0-BA0ACCE7C0C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{36A7730C-BF8B-4948-971B-A17618F00472}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36A7730C-BF8B-4948-971B-A17618F00472}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36A7730C-BF8B-4948-971B-A17618F00472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1053DC2-1EA6-4605-B2E0-BA0ACCE7C0C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1053DC2-1EA6-4605-B2E0-BA0ACCE7C0C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1053DC2-1EA6-4605-B2E0-BA0ACCE7C0C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1053DC2-1EA6-4605-B2E0-BA0ACCE7C0C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
