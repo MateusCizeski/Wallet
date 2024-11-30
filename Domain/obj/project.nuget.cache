@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CsW46p2aDug=",
+  "dgSpecHash": "WK9Pdk7/jLc=",
   "success": true,
-  "projectFilePath": "C:\\desenvMateus\\Wallet\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Desenvolvimento\\Wallet\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mateu\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\mateu\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",

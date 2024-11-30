@@ -1,3 +1,4 @@
+using Domain;
 using MongoDB.Driver;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,11 +7,11 @@ var mongoConnectionString = builder.Configuration.GetConnectionString("DefaultCo
 var databaseName = "WalletProject";
 var collectionName = "wallet";
 
-//var mongoClient = new MongoClient(mongoConnectionString);
-//var mongoDatabase = mongoClient.GetDatabase(databaseName);
-//var mongoCollection = mongoDatabase.GetCollection<Order>(collectionName);
+var mongoClient = new MongoClient(mongoConnectionString);
+var mongoDatabase = mongoClient.GetDatabase(databaseName);
+var mongoCollection = mongoDatabase.GetCollection<Domain.Wallet>(collectionName);
 
-//builder.Services.AddSingleton(mongoCollection);
+builder.Services.AddSingleton(mongoCollection);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
