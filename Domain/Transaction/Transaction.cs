@@ -1,11 +1,10 @@
-﻿using MongoDB.Bson;
+﻿using System.ComponentModel;
+using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
-using System.ComponentModel;
-using System.Transactions;
 
-namespace Domain
+namespace Domain.Transaction
 {
-    public class Transaction
+    public class TransactionClass
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
