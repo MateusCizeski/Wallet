@@ -1,5 +1,6 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
+using System.ComponentModel;
 using System.Transactions;
 
 namespace Domain
@@ -18,9 +19,16 @@ namespace Domain
 
     public enum EnumTransactionStatus
     {
-        Pending,
-        Authorized,
-        Rejected,
-        Completed
+        [Description("Pendente")]
+        Pending = 1,
+
+        [Description("Autorizado")]
+        Authorized = 2,
+
+        [Description("Rejeitado")]
+        Rejected = 3,
+
+        [Description("Concluído")]
+        Completed = 4
     }
 }

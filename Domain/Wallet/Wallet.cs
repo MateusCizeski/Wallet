@@ -1,4 +1,6 @@
-﻿namespace Domain.Wallet
+﻿using System.ComponentModel;
+
+namespace Domain.Wallet
 {
     public class WalletClass
     {
@@ -14,7 +16,10 @@
 
     public enum EnumWalletType
     {
-        Personal,
-        Business
+        [Description("Pessoal")]
+        Personal = 1,
+
+        [Description("Negócios")]
+        Business = 2
     }
 }
