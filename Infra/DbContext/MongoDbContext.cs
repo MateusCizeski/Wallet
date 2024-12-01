@@ -1,4 +1,4 @@
-﻿using Domain;
+﻿using Domain.Wallet;
 using MongoDB.Driver;
 
 namespace Infra
@@ -13,6 +13,6 @@ namespace Infra
             _database = client.GetDatabase(databaseName);
         }
 
-        public IMongoCollection<Domain.Wallet> Orders => _database.GetCollection<Domain.Wallet>("Wallet");
+        public IMongoCollection<WalletClass> Orders => _database.GetCollection<WalletClass>("Wallet");
     }
 }

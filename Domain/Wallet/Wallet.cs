@@ -1,6 +1,6 @@
-﻿namespace Domain
+﻿namespace Domain.Wallet
 {
-    public class Wallet
+    public class WalletClass
     {
         public int Id { get; set; }
         public string Name {  get; set; }
