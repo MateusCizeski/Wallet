@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Wallet.Controllers
 {
-    [Route("api/v1/wallet")]
+    [Route("api/v1/Wallet")]
     [ApiController]
     public class WalletController : ControllerBase
     {
