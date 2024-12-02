@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Desenvolvimento\\Wallet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{89BDA67B-2F25-4D23-8BFC-699FD5F17832}|Services\\Services.csproj|c:\\desenvolvimento\\wallet\\services\\wallettype\\servwallettype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89BDA67B-2F25-4D23-8BFC-699FD5F17832}|Services\\Services.csproj|solutionrelative:services\\wallettype\\servwallettype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{36A7730C-BF8B-4948-971B-A17618F00472}|Application\\Application.csproj|c:\\desenvolvimento\\wallet\\application\\wallettype\\mapper\\mapperwallettype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A7730C-BF8B-4948-971B-A17618F00472}|Application\\Application.csproj|solutionrelative:application\\wallettype\\mapper\\mapperwallettype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89BDA67B-2F25-4D23-8BFC-699FD5F17832}|Services\\Services.csproj|c:\\desenvolvimento\\wallet\\services\\wallettype\\iservwallettype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89BDA67B-2F25-4D23-8BFC-699FD5F17832}|Services\\Services.csproj|solutionrelative:services\\wallettype\\iservwallettype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{36A7730C-BF8B-4948-971B-A17618F00472}|Application\\Application.csproj|c:\\desenvolvimento\\wallet\\application\\wallettype\\mapper\\imapperwallettype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A7730C-BF8B-4948-971B-A17618F00472}|Application\\Application.csproj|solutionrelative:application\\wallettype\\mapper\\imapperwallettype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ServWalletType.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Services\\WalletType\\ServWalletType.cs",
-              "RelativeDocumentMoniker": "Services\\WalletType\\ServWalletType.cs",
-              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Services\\WalletType\\ServWalletType.cs",
-              "RelativeToolTip": "Services\\WalletType\\ServWalletType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "IMapperWalletType.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Application\\WalletType\\Mapper\\IMapperWalletType.cs",
+              "RelativeDocumentMoniker": "Application\\WalletType\\Mapper\\IMapperWalletType.cs",
+              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Application\\WalletType\\Mapper\\IMapperWalletType.cs",
+              "RelativeToolTip": "Application\\WalletType\\Mapper\\IMapperWalletType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T23:08:56.284Z",
+              "WhenOpened": "2024-12-02T23:18:25.1Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IServWalletType.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Services\\WalletType\\IServWalletType.cs",
-              "RelativeDocumentMoniker": "Services\\WalletType\\IServWalletType.cs",
-              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Services\\WalletType\\IServWalletType.cs",
-              "RelativeToolTip": "Services\\WalletType\\IServWalletType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "MapperWalletType.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Application\\WalletType\\Mapper\\MapperWalletType.cs",
+              "RelativeDocumentMoniker": "Application\\WalletType\\Mapper\\MapperWalletType.cs",
+              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Application\\WalletType\\Mapper\\MapperWalletType.cs*",
+              "RelativeToolTip": "Application\\WalletType\\Mapper\\MapperWalletType.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T23:08:45.861Z",
+              "WhenOpened": "2024-12-02T23:18:23.903Z",
               "EditorCaption": ""
             }
           ]
