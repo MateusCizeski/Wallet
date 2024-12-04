@@ -23,9 +23,9 @@ namespace Application.Wallet
            return result;
         }
 
-        public WalletClass EditWallet(InsertEditWalletDTO dto)
+        public WalletClass EditWallet(int id, InsertEditWalletDTO dto)
         {
-            var wallet = _servWallet.GetWalletById(dto.Id);
+            var wallet = _servWallet.GetWalletById(id);
             _mapperWallet.MapperEditWallet(wallet, dto);
             var result = _servWallet.EditWallet(wallet);
 
