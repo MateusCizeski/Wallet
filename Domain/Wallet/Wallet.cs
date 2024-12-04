@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using Domain.WalletType;
 
 namespace Domain.Wallet
 {
@@ -11,7 +12,7 @@ namespace Domain.Wallet
         public string Password { get; set; }
         public decimal Balance { get; set; }
         public EnumWalletType Type { get; set; }
-        public WalletType WalletType { get; set; }
+        public WalletTypeClass WalletType { get; set; }
     }
 
     public enum EnumWalletType
