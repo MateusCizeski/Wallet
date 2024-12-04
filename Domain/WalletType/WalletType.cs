@@ -1,4 +1,6 @@
-﻿namespace Domain.WalletType
+﻿using MongoDB.Bson.Serialization.Attributes;
+
+namespace Domain.WalletType
 {
     public class WalletTypeClass
     {

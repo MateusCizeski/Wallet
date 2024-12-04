@@ -6,8 +6,6 @@ namespace Domain.Transaction
 {
     public class TransactionClass
     {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; } = string.Empty;
         public string SenderWalletId { get; set; } = string.Empty;
         public string ReceiverWalletId { get; set; } = string.Empty;

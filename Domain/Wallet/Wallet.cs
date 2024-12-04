@@ -1,10 +1,12 @@
 ﻿using System.ComponentModel;
 using Domain.WalletType;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace Domain.Wallet
 {
     public class WalletClass
     {
+        [BsonId]
         public int Id { get; set; }
         public string Name {  get; set; }
         public string CpfCnpj { get; set; }
