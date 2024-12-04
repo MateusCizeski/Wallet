@@ -13,7 +13,7 @@ namespace Repository.Wallet
         }
 
         #region InsertWallet
-        public WalletClass InserWallet(WalletClass wallet)
+        public WalletClass InsertWallet(WalletClass wallet)
         {
             _mongoCollection.InsertOne(wallet);   
             return wallet;
