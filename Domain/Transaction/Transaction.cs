@@ -6,7 +6,7 @@ namespace Domain.Transaction
 {
     public class TransactionClass
     {
-        public string Id { get; set; } = string.Empty;
+        public int Id { get; set; }
         public string SenderWalletId { get; set; } = string.Empty;
         public string ReceiverWalletId { get; set; } = string.Empty;
         public decimal Amount { get; set; }
