@@ -12,20 +12,20 @@ namespace Repository.WalletType
             _mongoCollection = mongoCollection;
         }
 
-        public WalletTypeClass InsertWallet(WalletTypeClass wallet)
+        public WalletTypeClass InsertWalletType(WalletTypeClass wallet)
         {
             _mongoCollection.InsertOne(wallet);
             return wallet;
         }
 
-        public WalletTypeClass EditWallet(WalletTypeClass wallet)
+        public WalletTypeClass EditWalletType(WalletTypeClass wallet)
         {
             _mongoCollection.ReplaceOne(filter: p => p.Id == wallet.Id, replacement: wallet);
 
             return wallet;
         }
 
-        public WalletTypeClass GetWalletById(int id)
+        public WalletTypeClass GetWalletTypeById(int id)
         {
             var wallet = _mongoCollection.Find(p => p.Id == id).FirstOrDefault();
 
@@ -37,14 +37,14 @@ namespace Repository.WalletType
             return wallet;
         }
 
-        public List<WalletTypeClass> ListWallets()
+        public List<WalletTypeClass> ListWalletsType()
         {
             var types = _mongoCollection.Find(_ => true).ToList();
 
             return types;
         }
 
-        public void DeleteWallet(int id)
+        public void DeleteWalletType(int id)
         {
             var wallet = _mongoCollection.Find(p => p.Id == id).FirstOrDefault();
 
