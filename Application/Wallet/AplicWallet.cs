@@ -8,6 +8,7 @@ namespace Application.Wallet
 {
     public class AplicWallet : IAplicWallet
     {
+        #region Ctor
         private readonly IServWallet _servWallet;
         private readonly IMapperWallet _mapperWallet;
         private readonly CounterService _counterService;
@@ -18,16 +19,20 @@ namespace Application.Wallet
             _mapperWallet = mapperWallet;
             _counterService = new CounterService(database);
         }
+        #endregion
 
+        #region InsertWallet
         public WalletClass InsertWallet(InsertEditWalletDTO dto)
         {
            var wallet = _mapperWallet.MapperInsertWallet(dto);
-            wallet.Id = _counterService.GetNextSequenceValue("wallet");
+           wallet.Id = _counterService.GetNextSequenceValue("wallet");
            var result = _servWallet.InsertWallet(wallet);
 
            return result;
         }
+        #endregion
 
+        #region EditWallet
         public WalletClass EditWallet(int id, InsertEditWalletDTO dto)
         {
             var wallet = _servWallet.GetWalletById(id);
@@ -36,24 +41,31 @@ namespace Application.Wallet
 
             return result;
         }
+        #endregion
 
+        #region GetWalletById
         public WalletClass GetWalletById(int id)
         {
             var wallet = _servWallet.GetWalletById(id);
 
             return wallet;
         }
+        #endregion
 
+        #region ListWallets
         public List<WalletClass> ListWallets()
         {
             var wallets = _servWallet.ListWallets();
 
             return wallets;
         }
+        #endregion
 
+        #region DeleteWallet
         public void DeleteWallet(int id)
         {
            _servWallet.DeleteWallet(id);
         }
+        #endregion
     }
 }
