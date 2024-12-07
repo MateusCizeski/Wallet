@@ -14,8 +14,8 @@ namespace Services.WalletType
         }
         #endregion
 
-        #region InsertWallet
-        public WalletTypeClass InsertWallet(WalletTypeClass walletType)
+        #region InsertWalletType
+        public WalletTypeClass InsertWalletType(WalletTypeClass walletType)
         {
            _repWalletType.InsertWalletType(walletType);
 
@@ -23,8 +23,8 @@ namespace Services.WalletType
         }
         #endregion
 
-        #region EditWallet
-        public WalletTypeClass EditWallet(WalletTypeClass walletType)
+        #region EditWalletType
+        public WalletTypeClass EditWalletType(WalletTypeClass walletType)
         {
            _repWalletType.EditWalletType(walletType);
 
@@ -32,8 +32,8 @@ namespace Services.WalletType
         }
         #endregion
 
-        #region GetWalletById
-        public WalletTypeClass GetWalletById(int id)
+        #region GetWalletTypeById
+        public WalletTypeClass GetWalletTypeById(int id)
         {
            var walletType = _repWalletType.GetWalletTypeById(id);
 
@@ -41,8 +41,8 @@ namespace Services.WalletType
         }
         #endregion
 
-        #region ListWallets
-        public List<WalletTypeClass> ListWallets()
+        #region ListWalletsType
+        public List<WalletTypeClass> ListWalletsType()
         {
             var walletsType = _repWalletType.ListWalletsType();
 
@@ -50,8 +50,8 @@ namespace Services.WalletType
         }
         #endregion
 
-        #region DeleteWallet
-        public void DeleteWallet(int id)
+        #region DeleteWalletType
+        public void DeleteWalletType(int id)
         {
             _repWalletType.DeleteWalletType(id);
         }
