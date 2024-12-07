@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Desenvolvimento\\Wallet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|c:\\desenvolvimento\\wallet\\repository\\transaction\\reptransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|solutionrelative:repository\\transaction\\reptransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36A7730C-BF8B-4948-971B-A17618F00472}|Application\\Application.csproj|c:\\desenvolvimento\\wallet\\application\\transaction\\aplictransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36A7730C-BF8B-4948-971B-A17618F00472}|Application\\Application.csproj|solutionrelative:application\\transaction\\aplictransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36A7730C-BF8B-4948-971B-A17618F00472}|Application\\Application.csproj|c:\\desenvolvimento\\wallet\\application\\transaction\\iaplictransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36A7730C-BF8B-4948-971B-A17618F00472}|Application\\Application.csproj|solutionrelative:application\\transaction\\iaplictransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|c:\\desenvolvimento\\wallet\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|solutionrelative:controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RepTransaction.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Repository\\Transaction\\RepTransaction.cs",
-              "RelativeDocumentMoniker": "Repository\\Transaction\\RepTransaction.cs",
-              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Repository\\Transaction\\RepTransaction.cs",
-              "RelativeToolTip": "Repository\\Transaction\\RepTransaction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAzAAAAAAAAAA==",
+              "Title": "TransactionController.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Controllers\\TransactionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TransactionController.cs",
+              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Controllers\\TransactionController.cs",
+              "RelativeToolTip": "Controllers\\TransactionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF4AAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T16:15:31.579Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IAplicTransaction.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Application\\Transaction\\IAplicTransaction.cs",
-              "RelativeDocumentMoniker": "Application\\Transaction\\IAplicTransaction.cs",
-              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Application\\Transaction\\IAplicTransaction.cs",
-              "RelativeToolTip": "Application\\Transaction\\IAplicTransaction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T16:10:14.994Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AplicTransaction.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Application\\Transaction\\AplicTransaction.cs",
-              "RelativeDocumentMoniker": "Application\\Transaction\\AplicTransaction.cs",
-              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Application\\Transaction\\AplicTransaction.cs",
-              "RelativeToolTip": "Application\\Transaction\\AplicTransaction.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwEMAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T16:02:39.59Z",
+              "WhenOpened": "2024-12-07T16:29:32.158Z",
               "EditorCaption": ""
             }
           ]

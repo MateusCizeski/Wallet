@@ -7,12 +7,14 @@ namespace Wallet.Controllers
     [ApiController]
     public class WalletController : ControllerBase
     {
+        #region Ctor
         private readonly IAplicWallet _aplicWallet;
 
         public WalletController(IAplicWallet aplicWallet)
         {
             _aplicWallet = aplicWallet;
         }
+        #endregion
 
         #region InsertWallet
         [HttpPost]
@@ -35,7 +37,7 @@ namespace Wallet.Controllers
         #region EditWallet
         [HttpPut]
         [Route("EditWallet/{id}")]
-        public IActionResult EditOrder([FromRoute] int id, [FromBody] InsertEditWalletDTO dto)
+        public IActionResult EditWallet([FromRoute] int id, [FromBody] InsertEditWalletDTO dto)
         {
             try
             {
