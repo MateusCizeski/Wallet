@@ -15,7 +15,7 @@ namespace Repository.Transaction
 
         public TransactionClass InsertTransaction(TransactionClass transaction)
         {
-            _mongoCollection.InsertOne(transaction;
+            _mongoCollection.InsertOne(transaction);
             return transaction;
         }
 
