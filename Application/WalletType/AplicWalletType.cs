@@ -13,11 +13,11 @@ namespace Application.WalletType
         private readonly IMapperWalletType _mapperWalletType;
         private readonly CounterService _counterService;
 
-        public AplicWalletType(IServWalletType servWalletType, IMapperWalletType mapperWalletType, IMongoDatabase database)
+        public AplicWalletType(IServWalletType servWalletType, IMapperWalletType mapperWalletType, CounterService counterService)
         {
             _servWalletType = servWalletType;
             _mapperWalletType = mapperWalletType;
-            _counterService = new CounterService(database);
+            _counterService = counterService;
         }
         #endregion
 

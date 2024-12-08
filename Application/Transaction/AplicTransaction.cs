@@ -13,11 +13,11 @@ namespace Application.Transaction
         private readonly IMapperTransaction _mapperTransaction;
         private readonly CounterService _counterService;
 
-        public AplicTransaction(IServTransaction servTransaction, IMapperTransaction mapperTransaction, IMongoDatabase database)
+        public AplicTransaction(IServTransaction servTransaction, IMapperTransaction mapperTransaction, CounterService counterService)
         {
             _servTransaction = servTransaction;
             _mapperTransaction = mapperTransaction;
-            _counterService = new CounterService(database);
+            _counterService = counterService;
         }
         #endregion
 

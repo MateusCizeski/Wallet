@@ -1,4 +1,6 @@
-﻿using Domain.Wallet;
+﻿using Domain.Transaction;
+using Domain.Wallet;
+using Domain.WalletType;
 using MongoDB.Driver;
 
 namespace Infra
@@ -13,6 +15,9 @@ namespace Infra
             _database = client.GetDatabase(databaseName);
         }
 
-        public IMongoCollection<WalletClass> Orders => _database.GetCollection<WalletClass>("Wallet");
+        public IMongoDatabase Database => _database;
+        public IMongoCollection<WalletClass> Wallets => _database.GetCollection<WalletClass>("Wallet");
+        public IMongoCollection<WalletTypeClass> WalletTypes => _database.GetCollection<WalletTypeClass>("WalletType");
+        public IMongoCollection<TransactionClass> Transactions => _database.GetCollection<TransactionClass>("Transaction");
     }
 }

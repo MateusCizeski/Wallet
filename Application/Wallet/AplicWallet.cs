@@ -13,11 +13,11 @@ namespace Application.Wallet
         private readonly IMapperWallet _mapperWallet;
         private readonly CounterService _counterService;
 
-        public AplicWallet(IServWallet servWallet, IMapperWallet mapperWallet, IMongoDatabase database)
+        public AplicWallet(IServWallet servWallet, IMapperWallet mapperWallet, CounterService counterService)
         {
             _servWallet = servWallet;
             _mapperWallet = mapperWallet;
-            _counterService = new CounterService(database);
+            _counterService = counterService;
         }
         #endregion
 
