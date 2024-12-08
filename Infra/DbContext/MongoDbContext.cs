@@ -15,9 +15,8 @@ namespace Infra
             _database = client.GetDatabase(databaseName);
         }
 
-        public IMongoDatabase Database => _database;
-        public IMongoCollection<WalletClass> Wallets => _database.GetCollection<WalletClass>("Wallet");
-        public IMongoCollection<WalletTypeClass> WalletTypes => _database.GetCollection<WalletTypeClass>("WalletType");
-        public IMongoCollection<TransactionClass> Transactions => _database.GetCollection<TransactionClass>("Transaction");
+        public IMongoCollection<WalletClass> wallet => _database.GetCollection<WalletClass>("wallet");
+        public IMongoCollection<WalletTypeClass> walletType => _database.GetCollection<WalletTypeClass>("walletType");
+        public IMongoCollection<TransactionClass> wransaction => _database.GetCollection<TransactionClass>("transaction");
     }
 }

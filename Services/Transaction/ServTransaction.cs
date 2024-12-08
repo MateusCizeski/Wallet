@@ -8,7 +8,7 @@ namespace Services.Transaction
         #region Ctor
         private readonly IRepTransaction _repTransaction;
 
-        public ServTransaction(RepTransaction repTransaction)
+        public ServTransaction(IRepTransaction repTransaction)
         {
             _repTransaction = repTransaction;
         }

@@ -1,9 +1,7 @@
-﻿using System.Transactions;
-using Domain.Transaction;
+﻿using Domain.Transaction;
 using MongoDB.Driver;
 
-namespace Repository.Transaction
-{
+namespace Repository.Transaction {
     public class RepTransaction : IRepTransaction
     {
         private readonly IMongoCollection<TransactionClass> _mongoCollection;

@@ -7,16 +7,24 @@
       "RelativeMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|c:\\desenvolvimento\\wallet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|c:\\desenvolvimento\\wallet\\services\\transaction\\servtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|solutionrelative:services\\transaction\\servtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{89BDA67B-2F25-4D23-8BFC-699FD5F17832}|Services\\Services.csproj|c:\\desenvolvimento\\wallet\\services\\transaction\\servtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89BDA67B-2F25-4D23-8BFC-699FD5F17832}|Services\\Services.csproj|solutionrelative:services\\transaction\\servtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7DD5F1A0-BAB0-41AC-BEF9-33E285FC5D40}|Repository\\Repository.csproj|c:\\desenvolvimento\\wallet\\repository\\transaction\\reptransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DD5F1A0-BAB0-41AC-BEF9-33E285FC5D40}|Repository\\Repository.csproj|solutionrelative:repository\\transaction\\reptransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89BDA67B-2F25-4D23-8BFC-699FD5F17832}|Services\\Services.csproj|c:\\desenvolvimento\\wallet\\services\\counter\\counterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89BDA67B-2F25-4D23-8BFC-699FD5F17832}|Services\\Services.csproj|solutionrelative:services\\counter\\counterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1053DC2-1EA6-4605-B2E0-BA0ACCE7C0C8}|Infra\\Infra.csproj|c:\\desenvolvimento\\wallet\\infra\\dbcontext\\mongodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1053DC2-1EA6-4605-B2E0-BA0ACCE7C0C8}|Infra\\Infra.csproj|solutionrelative:infra\\dbcontext\\mongodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|c:\\desenvolvimento\\wallet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +34,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ServTransaction.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Services\\Transaction\\ServTransaction.cs",
+              "RelativeDocumentMoniker": "Services\\Transaction\\ServTransaction.cs",
+              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Services\\Transaction\\ServTransaction.cs",
+              "RelativeToolTip": "Services\\Transaction\\ServTransaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:21:58.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RepTransaction.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Repository\\Transaction\\RepTransaction.cs",
+              "RelativeDocumentMoniker": "Repository\\Transaction\\RepTransaction.cs",
+              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Repository\\Transaction\\RepTransaction.cs",
+              "RelativeToolTip": "Repository\\Transaction\\RepTransaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:10:28.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CounterService.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Services\\Counter\\CounterService.cs",
+              "RelativeDocumentMoniker": "Services\\Counter\\CounterService.cs",
+              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Services\\Counter\\CounterService.cs",
+              "RelativeToolTip": "Services\\Counter\\CounterService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:07:19.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MongoDbContext.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Infra\\DbContext\\MongoDbContext.cs",
+              "RelativeDocumentMoniker": "Infra\\DbContext\\MongoDbContext.cs",
+              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Infra\\DbContext\\MongoDbContext.cs",
+              "RelativeToolTip": "Infra\\DbContext\\MongoDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T13:55:04.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -43,41 +103,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ServTransaction.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Services\\Transaction\\ServTransaction.cs",
-              "RelativeDocumentMoniker": "Services\\Transaction\\ServTransaction.cs",
-              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Services\\Transaction\\ServTransaction.cs",
-              "RelativeToolTip": "Services\\Transaction\\ServTransaction.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAcwDwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T12:11:40.059Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Desenvolvimento\\Wallet\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAwCcAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAewBsAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-08T12:08:28.723Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RepTransaction.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Repository\\Transaction\\RepTransaction.cs",
-              "RelativeDocumentMoniker": "Repository\\Transaction\\RepTransaction.cs",
-              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Repository\\Transaction\\RepTransaction.cs",
-              "RelativeToolTip": "Repository\\Transaction\\RepTransaction.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAcwCIAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T12:07:49.404Z",
               "EditorCaption": ""
             }
           ]
