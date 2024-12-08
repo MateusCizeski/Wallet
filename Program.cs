@@ -19,7 +19,7 @@ using Application.Transaction.Mapper;
 var builder = WebApplication.CreateBuilder(args);
 
 var mongoConnectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-var databaseName = "wallet";
+var databaseName = "WalletProject";
 
 var mongoClient = new MongoClient(mongoConnectionString);
 var mongoDatabase = mongoClient.GetDatabase(databaseName);
@@ -34,7 +34,7 @@ builder.Services.AddSingleton<IMongoCollection<WalletClass>>(sp =>
     mongoDatabase.GetCollection<WalletClass>("wallet"));
 
 builder.Services.AddSingleton<IMongoCollection<WalletTypeClass>>(sp =>
-    mongoDatabase.GetCollection<WalletTypeClass>("walletType"));
+    mongoDatabase.GetCollection<WalletTypeClass>("wallettype"));
 
 builder.Services.AddScoped<IRepTransaction, RepTransaction>();
 builder.Services.AddScoped<IRepWallet, RepWallet>();

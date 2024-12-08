@@ -26,6 +26,7 @@ namespace Application.WalletType
         {
            var walletType = _mapperWalletType.MapperInsertWalletType(dto);
            walletType.Id = _counterService.GetNextSequenceValue("");
+            _servWalletType.InsertWalletType(walletType);
 
            return walletType;
         }
@@ -36,6 +37,7 @@ namespace Application.WalletType
         {
             var walletType = _servWalletType.GetWalletTypeById(id);
             _mapperWalletType.MapperEditWalletType(walletType, dto);
+            _servWalletType.EditWalletType(walletType);
 
             return walletType;
         }
