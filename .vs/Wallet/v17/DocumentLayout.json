@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Desenvolvimento\\Wallet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|c:\\desenvolvimento\\wallet\\application\\wallettype\\aplicwallettype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|solutionrelative:application\\wallettype\\aplicwallettype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7DD5F1A0-BAB0-41AC-BEF9-33E285FC5D40}|Repository\\Repository.csproj|c:\\desenvolvimento\\wallet\\repository\\wallet\\repwallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD5F1A0-BAB0-41AC-BEF9-33E285FC5D40}|Repository\\Repository.csproj|solutionrelative:repository\\wallet\\repwallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|c:\\desenvolvimento\\wallet\\controllers\\wallettypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|solutionrelative:controllers\\wallettypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|c:\\desenvolvimento\\wallet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|c:\\desenvolvimento\\wallet\\repository\\wallettype\\repwallettype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|solutionrelative:repository\\wallettype\\repwallettype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7DD5F1A0-BAB0-41AC-BEF9-33E285FC5D40}|Repository\\Repository.csproj|c:\\desenvolvimento\\wallet\\repository\\wallet\\irepwallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD5F1A0-BAB0-41AC-BEF9-33E285FC5D40}|Repository\\Repository.csproj|solutionrelative:repository\\wallet\\irepwallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AplicWalletType.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Application\\WalletType\\AplicWalletType.cs",
-              "RelativeDocumentMoniker": "Application\\WalletType\\AplicWalletType.cs",
-              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Application\\WalletType\\AplicWalletType.cs",
-              "RelativeToolTip": "Application\\WalletType\\AplicWalletType.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAswCcAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T15:38:40.882Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T15:33:31.784Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "WalletTypeController.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Controllers\\WalletTypeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\WalletTypeController.cs",
-              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Controllers\\WalletTypeController.cs",
-              "RelativeToolTip": "Controllers\\WalletTypeController.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAADgvysAAAAQAAAAAAAAAA==",
+              "Title": "IRepWallet.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Repository\\Wallet\\IRepWallet.cs",
+              "RelativeDocumentMoniker": "Repository\\Wallet\\IRepWallet.cs",
+              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Repository\\Wallet\\IRepWallet.cs",
+              "RelativeToolTip": "Repository\\Wallet\\IRepWallet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T15:30:33.433Z",
+              "WhenOpened": "2024-12-09T23:41:38.676Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RepWalletType.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Repository\\WalletType\\RepWalletType.cs",
-              "RelativeDocumentMoniker": "Repository\\WalletType\\RepWalletType.cs",
-              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Repository\\WalletType\\RepWalletType.cs",
-              "RelativeToolTip": "Repository\\WalletType\\RepWalletType.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAswB4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "RepWallet.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Repository\\Wallet\\RepWallet.cs",
+              "RelativeDocumentMoniker": "Repository\\Wallet\\RepWallet.cs",
+              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Repository\\Wallet\\RepWallet.cs",
+              "RelativeToolTip": "Repository\\Wallet\\RepWallet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T15:29:08.966Z",
+              "WhenOpened": "2024-12-09T23:37:41.692Z",
               "EditorCaption": ""
             }
           ]

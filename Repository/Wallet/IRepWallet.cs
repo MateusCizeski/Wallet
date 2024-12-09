@@ -4,10 +4,10 @@ namespace Repository.Wallet
 {
     public interface IRepWallet
     {
-        WalletClass InsertWallet(WalletClass wallet);
-        WalletClass EditWallet(WalletClass wallet);
-        WalletClass GetWalletById(int id);
-        List<WalletClass> ListWallets();
+        WalletDTO InsertWallet(WalletClass wallet);
+        WalletDTO EditWallet(WalletClass wallet);
+        WalletDTO GetWalletById(int id);
+        List<WalletDTO> ListWallets();
         void DeleteWallet(int id);
     }
 }
