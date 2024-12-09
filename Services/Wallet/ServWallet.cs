@@ -2,7 +2,7 @@
 using Repository.Wallet;
 
 namespace Services.Wallet
-{
+{ 
     public class ServWallet : IServWallet
     {
         #region Ctor
@@ -15,7 +15,7 @@ namespace Services.Wallet
         #endregion
 
         #region InsertWallet
-        public WalletClass InsertWallet(WalletClass wallet)
+        public WalletDTO InsertWallet(WalletClass wallet)
         {
             var result = _repWallet.InsertWallet(wallet);
 
@@ -24,7 +24,7 @@ namespace Services.Wallet
         #endregion
 
         #region EditWallet
-        public WalletClass EditWallet(WalletClass wallet)
+        public WalletDTO EditWallet(WalletClass wallet)
         {
             var result = _repWallet.EditWallet(wallet);
 
@@ -33,7 +33,7 @@ namespace Services.Wallet
         #endregion
 
         #region GetWalletById
-        public WalletClass GetWalletById(int id)
+        public WalletDTO GetWalletById(int id)
         {
             var wallet = _repWallet.GetWalletById(id);
 
@@ -42,7 +42,7 @@ namespace Services.Wallet
         #endregion
 
         #region ListWallets
-        public List<WalletClass> ListWallets()
+        public List<WalletDTO> ListWallets()
         {
             var wallets = _repWallet.ListWallets();
 

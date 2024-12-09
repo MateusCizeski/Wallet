@@ -16,12 +16,14 @@ namespace Repository.Wallet
 
     public class RepWallet : IRepWallet
     {
+        #region Ctor
         private readonly IMongoCollection<WalletClass> _mongoCollection;
 
         public RepWallet(IMongoCollection<WalletClass> mongoCollection)
         {
             _mongoCollection = mongoCollection;
         }
+        #endregion
 
         #region InsertWallet
         public WalletDTO InsertWallet(WalletClass wallet)
@@ -38,7 +40,6 @@ namespace Repository.Wallet
                 throw new Exception("Já existe uma carteira cadastrada com este e-mail.");
             }
 
-            // Criptografa a senha antes de salvar
             wallet.Password = BCrypt.Net.BCrypt.HashPassword(wallet.Password);
 
             _mongoCollection.InsertOne(wallet);
@@ -56,7 +57,6 @@ namespace Repository.Wallet
                 throw new Exception("Carteira não encontrada.");
             }
 
-            // Mantém a senha existente se nenhuma nova senha for enviada
             if (string.IsNullOrWhiteSpace(wallet.Password))
             {
                 wallet.Password = existingWallet.Password;
