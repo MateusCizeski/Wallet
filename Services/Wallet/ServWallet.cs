@@ -33,7 +33,7 @@ namespace Services.Wallet
         #endregion
 
         #region GetWalletById
-        public WalletDTO GetWalletById(int id)
+        public WalletClass GetWalletById(int id)
         {
             var wallet = _repWallet.GetWalletById(id);
 

@@ -7,7 +7,7 @@ namespace Services.Wallet
     {
         WalletDTO InsertWallet(WalletClass wallet);
         WalletDTO EditWallet(WalletClass wallet);
-        WalletDTO GetWalletById(int id);
+        WalletClass GetWalletById(int id);
         List<WalletDTO> ListWallets();
         void DeleteWallet(int id);
     }

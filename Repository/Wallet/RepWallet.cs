@@ -73,7 +73,7 @@ namespace Repository.Wallet
         #endregion
 
         #region GetWalletById
-        public WalletDTO GetWalletById(int id)
+        public WalletClass GetWalletById(int id)
         {
             var wallet = _mongoCollection.Find(p => p.Id == id).FirstOrDefault();
 
@@ -82,7 +82,7 @@ namespace Repository.Wallet
                 throw new Exception("Carteira não encontrada.");
             }
 
-            return MapToDTO(wallet);
+            return wallet;
         }
         #endregion
 

@@ -1,6 +1,7 @@
 ﻿using Application.Wallet.Mapper;
 using Domain.Wallet;
 using MongoDB.Driver;
+using Repository.Wallet;
 using Services.Counter;
 using Services.Wallet;
 
@@ -22,7 +23,7 @@ namespace Application.Wallet
         #endregion
 
         #region InsertWallet
-        public WalletClass InsertWallet(InsertEditWalletDTO dto)
+        public WalletDTO InsertWallet(InsertEditWalletDTO dto)
         {
            var wallet = _mapperWallet.MapperInsertWallet(dto);
            wallet.Id = _counterService.GetNextSequenceValue("wallet");
@@ -33,11 +34,11 @@ namespace Application.Wallet
         #endregion
 
         #region EditWallet
-        public WalletClass EditWallet(int id, InsertEditWalletDTO dto)
+        public WalletDTO EditWallet(int id, InsertEditWalletDTO dto)
         {
-            var wallet = _servWallet.GetWalletById(id);
-            _mapperWallet.MapperEditWallet(wallet, dto);
-            var result = _servWallet.EditWallet(wallet);
+            var walletDto = _servWallet.GetWalletById(id);
+            _mapperWallet.MapperEditWallet(walletDto, dto);
+            var result = _servWallet.EditWallet(walletDto);
 
             return result;
         }
@@ -53,7 +54,7 @@ namespace Application.Wallet
         #endregion
 
         #region ListWallets
-        public List<WalletClass> ListWallets()
+        public List<WalletDTO> ListWallets()
         {
             var wallets = _servWallet.ListWallets();
 

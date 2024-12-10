@@ -1,13 +1,14 @@
 ﻿using Domain.Wallet;
+using Repository.Wallet;
 
 namespace Application.Wallet
 {
     public interface IAplicWallet
     {
-        WalletClass InsertWallet(InsertEditWalletDTO dto);
-        WalletClass EditWallet(int id, InsertEditWalletDTO dto);
+        WalletDTO InsertWallet(InsertEditWalletDTO dto);
+        WalletDTO EditWallet(int id, InsertEditWalletDTO dto);
         WalletClass GetWalletById(int id);
-        List<WalletClass> ListWallets();
+        List<WalletDTO> ListWallets();
         void DeleteWallet(int id);
     }
 }
