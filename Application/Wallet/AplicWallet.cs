@@ -23,7 +23,7 @@ namespace Application.Wallet
         #endregion
 
         #region InsertWallet
-        public WalletDTO InsertWallet(InsertEditWalletDTO dto)
+        public WalletClass InsertWallet(InsertEditWalletDTO dto)
         {
            var wallet = _mapperWallet.MapperInsertWallet(dto);
            wallet.Id = _counterService.GetNextSequenceValue("wallet");
@@ -34,7 +34,7 @@ namespace Application.Wallet
         #endregion
 
         #region EditWallet
-        public WalletDTO EditWallet(int id, InsertEditWalletDTO dto)
+        public WalletClass EditWallet(int id, InsertEditWalletDTO dto)
         {
             var walletDto = _servWallet.GetWalletById(id);
             _mapperWallet.MapperEditWallet(walletDto, dto);
@@ -54,7 +54,7 @@ namespace Application.Wallet
         #endregion
 
         #region ListWallets
-        public List<WalletDTO> ListWallets()
+        public List<WalletClass> ListWallets()
         {
             var wallets = _servWallet.ListWallets();
 

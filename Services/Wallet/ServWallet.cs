@@ -15,7 +15,7 @@ namespace Services.Wallet
         #endregion
 
         #region InsertWallet
-        public WalletDTO InsertWallet(WalletClass wallet)
+        public WalletClass InsertWallet(WalletClass wallet)
         {
             var result = _repWallet.InsertWallet(wallet);
 
@@ -24,7 +24,7 @@ namespace Services.Wallet
         #endregion
 
         #region EditWallet
-        public WalletDTO EditWallet(WalletClass wallet)
+        public WalletClass EditWallet(WalletClass wallet)
         {
             var result = _repWallet.EditWallet(wallet);
 
@@ -42,7 +42,7 @@ namespace Services.Wallet
         #endregion
 
         #region ListWallets
-        public List<WalletDTO> ListWallets()
+        public List<WalletClass> ListWallets()
         {
             var wallets = _repWallet.ListWallets();
 

@@ -2,18 +2,7 @@
 using MongoDB.Driver;
 
 namespace Repository.Wallet
-{
-    #region DTO's
-    public class WalletDTO
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public decimal Balance { get; set; }
-        public EnumWalletType Type { get; set; }
-    }
-    #endregion
-
+{ 
     public class RepWallet : IRepWallet
     {
         #region Ctor
@@ -26,7 +15,7 @@ namespace Repository.Wallet
         #endregion
 
         #region InsertWallet
-        public WalletDTO InsertWallet(WalletClass wallet)
+        public WalletClass InsertWallet(WalletClass wallet)
         {
             if (string.IsNullOrWhiteSpace(wallet.Email) || string.IsNullOrWhiteSpace(wallet.Password))
             {
@@ -44,12 +33,12 @@ namespace Repository.Wallet
 
             _mongoCollection.InsertOne(wallet);
 
-            return MapToDTO(wallet);
+            return wallet;
         }
         #endregion
 
         #region EditWallet
-        public WalletDTO EditWallet(WalletClass wallet)
+        public WalletClass EditWallet(WalletClass wallet)
         {
             var existingWallet = _mongoCollection.Find(w => w.Id == wallet.Id).FirstOrDefault();
             if (existingWallet == null)
@@ -68,7 +57,7 @@ namespace Repository.Wallet
 
             _mongoCollection.ReplaceOne(filter: p => p.Id == wallet.Id, replacement: wallet);
 
-            return MapToDTO(wallet);
+            return wallet;
         }
         #endregion
 
@@ -82,16 +71,27 @@ namespace Repository.Wallet
                 throw new Exception("Carteira não encontrada.");
             }
 
-            return wallet;
+            var sanitizedWallet = new WalletClass
+            {
+                Id = wallet.Id,
+                Name = wallet.Name,
+                CpfCnpj = wallet.CpfCnpj,
+                Email = wallet.Email,
+                Balance = wallet.Balance,
+                Type = wallet.Type,
+                WalletType = wallet.WalletType
+            };
+
+            return sanitizedWallet;
         }
         #endregion
 
         #region ListWallets
-        public List<WalletDTO> ListWallets()
+        public List<WalletClass> ListWallets()
         {
             var wallets = _mongoCollection.Find(_ => true).ToList();
 
-            return wallets.Select(MapToDTO).ToList();
+            return wallets;
         }
         #endregion
 
@@ -106,20 +106,6 @@ namespace Repository.Wallet
             }
 
             _mongoCollection.DeleteOne(p => p.Id == id);
-        }
-        #endregion
-
-        #region Helpers
-        private WalletDTO MapToDTO(WalletClass wallet)
-        {
-            return new WalletDTO
-            {
-                Id = wallet.Id,
-                Name = wallet.Name,
-                Email = wallet.Email,
-                Balance = wallet.Balance,
-                Type = wallet.Type
-            };
         }
         #endregion
     }

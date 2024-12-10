@@ -5,10 +5,10 @@ namespace Application.Wallet
 {
     public interface IAplicWallet
     {
-        WalletDTO InsertWallet(InsertEditWalletDTO dto);
-        WalletDTO EditWallet(int id, InsertEditWalletDTO dto);
+        WalletClass InsertWallet(InsertEditWalletDTO dto);
+        WalletClass EditWallet(int id, InsertEditWalletDTO dto);
         WalletClass GetWalletById(int id);
-        List<WalletDTO> ListWallets();
+        List<WalletClass> ListWallets();
         void DeleteWallet(int id);
     }
 }

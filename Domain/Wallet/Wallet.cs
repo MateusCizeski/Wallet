@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Text.Json.Serialization;
 using Domain.WalletType;
 using MongoDB.Bson.Serialization.Attributes;
 
