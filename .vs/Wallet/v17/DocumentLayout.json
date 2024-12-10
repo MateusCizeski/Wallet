@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Desenvolvimento\\Wallet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|c:\\desenvolvimento\\wallet\\services\\wallet\\iservwallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|solutionrelative:services\\wallet\\iservwallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7DD5F1A0-BAB0-41AC-BEF9-33E285FC5D40}|Repository\\Repository.csproj|c:\\desenvolvimento\\wallet\\repository\\wallet\\repwallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD5F1A0-BAB0-41AC-BEF9-33E285FC5D40}|Repository\\Repository.csproj|solutionrelative:repository\\wallet\\repwallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|c:\\desenvolvimento\\wallet\\services\\wallet\\servwallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|solutionrelative:services\\wallet\\servwallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|c:\\desenvolvimento\\wallet\\application\\wallet\\aplicwallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|solutionrelative:application\\wallet\\aplicwallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|c:\\desenvolvimento\\wallet\\domain\\wallet\\wallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|solutionrelative:domain\\wallet\\wallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "IServWallet.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Services\\Wallet\\IServWallet.cs",
-              "RelativeDocumentMoniker": "Services\\Wallet\\IServWallet.cs",
-              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Services\\Wallet\\IServWallet.cs",
-              "RelativeToolTip": "Services\\Wallet\\IServWallet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Title": "RepWallet.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Repository\\Wallet\\RepWallet.cs",
+              "RelativeDocumentMoniker": "Repository\\Wallet\\RepWallet.cs",
+              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Repository\\Wallet\\RepWallet.cs",
+              "RelativeToolTip": "Repository\\Wallet\\RepWallet.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAxwGcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T22:25:30.171Z",
+              "WhenOpened": "2024-12-10T22:28:13.171Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ServWallet.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Services\\Wallet\\ServWallet.cs",
-              "RelativeDocumentMoniker": "Services\\Wallet\\ServWallet.cs",
-              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Services\\Wallet\\ServWallet.cs",
-              "RelativeToolTip": "Services\\Wallet\\ServWallet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAjAAAAAAAAAA==",
+              "Title": "Wallet.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Domain\\Wallet\\Wallet.cs",
+              "RelativeDocumentMoniker": "Domain\\Wallet\\Wallet.cs",
+              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Domain\\Wallet\\Wallet.cs",
+              "RelativeToolTip": "Domain\\Wallet\\Wallet.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAUwBAAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T22:25:19.279Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AplicWallet.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Application\\Wallet\\AplicWallet.cs",
-              "RelativeDocumentMoniker": "Application\\Wallet\\AplicWallet.cs",
-              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Application\\Wallet\\AplicWallet.cs",
-              "RelativeToolTip": "Application\\Wallet\\AplicWallet.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAADwvx0AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T22:25:15.322Z",
+              "WhenOpened": "2024-12-10T22:27:04.319Z",
               "EditorCaption": ""
             }
           ]

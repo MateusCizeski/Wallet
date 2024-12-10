@@ -91,7 +91,18 @@ namespace Repository.Wallet
         {
             var wallets = _mongoCollection.Find(_ => true).ToList();
 
-            return wallets;
+            var sanitizedWallets = wallets.Select(wallet => new WalletClass
+            {
+                Id = wallet.Id,
+                Name = wallet.Name,
+                CpfCnpj = wallet.CpfCnpj,
+                Email = wallet.Email,
+                Balance = wallet.Balance,
+                Type = wallet.Type,
+                WalletType = wallet.WalletType
+            }).ToList();
+
+            return sanitizedWallets;
         }
         #endregion
 
