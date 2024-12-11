@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Desenvolvimento\\Wallet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{36A7730C-BF8B-4948-971B-A17618F00472}|Application\\Application.csproj|c:\\desenvolvimento\\wallet\\application\\transaction\\mapper\\mappertransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36A7730C-BF8B-4948-971B-A17618F00472}|Application\\Application.csproj|solutionrelative:application\\transaction\\mapper\\mappertransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36A7730C-BF8B-4948-971B-A17618F00472}|Application\\Application.csproj|c:\\desenvolvimento\\wallet\\application\\transaction\\dtos\\insertedittransactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36A7730C-BF8B-4948-971B-A17618F00472}|Application\\Application.csproj|solutionrelative:application\\transaction\\dtos\\insertedittransactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36A7730C-BF8B-4948-971B-A17618F00472}|Application\\Application.csproj|c:\\desenvolvimento\\wallet\\application\\transaction\\aplictransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36A7730C-BF8B-4948-971B-A17618F00472}|Application\\Application.csproj|solutionrelative:application\\transaction\\aplictransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{19721973-A2B8-4408-85F7-AB4E4DC612EE}|Domain\\Domain.csproj|c:\\desenvolvimento\\wallet\\domain\\transaction\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19721973-A2B8-4408-85F7-AB4E4DC612EE}|Domain\\Domain.csproj|solutionrelative:domain\\transaction\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7DD5F1A0-BAB0-41AC-BEF9-33E285FC5D40}|Repository\\Repository.csproj|c:\\desenvolvimento\\wallet\\repository\\wallet\\repwallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD5F1A0-BAB0-41AC-BEF9-33E285FC5D40}|Repository\\Repository.csproj|solutionrelative:repository\\wallet\\repwallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "InsertEditTransactionDTO.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Application\\Transaction\\DTOs\\InsertEditTransactionDTO.cs",
-              "RelativeDocumentMoniker": "Application\\Transaction\\DTOs\\InsertEditTransactionDTO.cs",
-              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Application\\Transaction\\DTOs\\InsertEditTransactionDTO.cs",
-              "RelativeToolTip": "Application\\Transaction\\DTOs\\InsertEditTransactionDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T00:01:51.288Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MapperTransaction.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Application\\Transaction\\Mapper\\MapperTransaction.cs",
-              "RelativeDocumentMoniker": "Application\\Transaction\\Mapper\\MapperTransaction.cs",
-              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Application\\Transaction\\Mapper\\MapperTransaction.cs",
-              "RelativeToolTip": "Application\\Transaction\\Mapper\\MapperTransaction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABKAAAAAAAAAA==",
+              "Title": "RepWallet.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Repository\\Wallet\\RepWallet.cs",
+              "RelativeDocumentMoniker": "Repository\\Wallet\\RepWallet.cs",
+              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Repository\\Wallet\\RepWallet.cs",
+              "RelativeToolTip": "Repository\\Wallet\\RepWallet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T00:01:43.92Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Transaction.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Domain\\Transaction\\Transaction.cs",
-              "RelativeDocumentMoniker": "Domain\\Transaction\\Transaction.cs",
-              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Domain\\Transaction\\Transaction.cs",
-              "RelativeToolTip": "Domain\\Transaction\\Transaction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T23:51:05.411Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AplicTransaction.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Application\\Transaction\\AplicTransaction.cs",
-              "RelativeDocumentMoniker": "Application\\Transaction\\AplicTransaction.cs",
-              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Application\\Transaction\\AplicTransaction.cs",
-              "RelativeToolTip": "Application\\Transaction\\AplicTransaction.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAAwFIAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T23:49:53.968Z",
+              "WhenOpened": "2024-12-11T22:10:41.272Z",
               "EditorCaption": ""
             }
           ]

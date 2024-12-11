@@ -33,7 +33,7 @@ namespace Repository.Wallet
 
             _mongoCollection.InsertOne(wallet);
 
-            return wallet;
+            return WalletEnxuta(wallet);
         }
         #endregion
 
@@ -57,7 +57,7 @@ namespace Repository.Wallet
 
             _mongoCollection.ReplaceOne(filter: p => p.Id == wallet.Id, replacement: wallet);
 
-            return wallet;
+            return WalletEnxuta(wallet);
         }
         #endregion
 
@@ -71,18 +71,7 @@ namespace Repository.Wallet
                 throw new Exception("Carteira não encontrada.");
             }
 
-            var sanitizedWallet = new WalletClass
-            {
-                Id = wallet.Id,
-                Name = wallet.Name,
-                CpfCnpj = wallet.CpfCnpj,
-                Email = wallet.Email,
-                Balance = wallet.Balance,
-                Type = wallet.Type,
-                WalletType = wallet.WalletType
-            };
-
-            return sanitizedWallet;
+            return WalletEnxuta(wallet);
         }
         #endregion
 
@@ -90,19 +79,14 @@ namespace Repository.Wallet
         public List<WalletClass> ListWallets()
         {
             var wallets = _mongoCollection.Find(_ => true).ToList();
+            List<WalletClass> walletsEnxuta = new List<WalletClass>();
 
-            var sanitizedWallets = wallets.Select(wallet => new WalletClass
+            foreach(var wallet in wallets)
             {
-                Id = wallet.Id,
-                Name = wallet.Name,
-                CpfCnpj = wallet.CpfCnpj,
-                Email = wallet.Email,
-                Balance = wallet.Balance,
-                Type = wallet.Type,
-                WalletType = wallet.WalletType
-            }).ToList();
+                walletsEnxuta.Add(WalletEnxuta(wallet));
+            }
 
-            return sanitizedWallets;
+            return walletsEnxuta;
         }
         #endregion
 
@@ -119,5 +103,21 @@ namespace Repository.Wallet
             _mongoCollection.DeleteOne(p => p.Id == id);
         }
         #endregion
+
+        public WalletClass WalletEnxuta(WalletClass wallet)
+        {
+            var sanitizedWallet = new WalletClass
+            {
+                Id = wallet.Id,
+                Name = wallet.Name,
+                CpfCnpj = wallet.CpfCnpj,
+                Email = wallet.Email,
+                Balance = wallet.Balance,
+                Type = wallet.Type,
+                WalletType = wallet.WalletType
+            };
+
+            return sanitizedWallet;
+        }
     }
 }
