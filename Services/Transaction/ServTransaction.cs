@@ -1,4 +1,5 @@
 ﻿using Domain.Transaction;
+using Domain.Wallet;
 using Repository.Transaction;
 
 namespace Services.Transaction
@@ -54,6 +55,13 @@ namespace Services.Transaction
         public void DeleteTransaction(int id)
         {
             _repTransaction.DeleteTransaction(id);
+        }
+        #endregion
+
+        #region Transaction
+        public void Transaction(WalletClass WalletSender, WalletClass WalletReceive)
+        {
+
         }
         #endregion
     }

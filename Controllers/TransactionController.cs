@@ -1,4 +1,5 @@
 ﻿using Application.Transaction;
+using Application.Transaction.DTOs;
 using Application.WalletType;
 using Microsoft.AspNetCore.Mvc;
 
@@ -97,6 +98,24 @@ namespace Wallet.Controllers
             try
             {
                 _aplicTransaction.DeleteTransaction(id);
+
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+        #endregion        
+        
+        #region Transaction
+        [HttpPost]
+        [Route("Transaction/{id}")]
+        public IActionResult Transaction([FromBody] TransactionDTO dto)
+        {
+            try
+            {
+                _aplicTransaction.Transaction(dto);
 
                 return Ok();
             }

@@ -1,4 +1,5 @@
-﻿using Domain.Transaction;
+﻿using Application.Transaction.DTOs;
+using Domain.Transaction;
 
 namespace Application.Transaction
 {
@@ -9,5 +10,6 @@ namespace Application.Transaction
         TransactionClass GetTransactionById(int id);
         List<TransactionClass> ListTransaction();
         void DeleteTransaction(int id);
+        void Transaction(TransactionDTO dto);
     }
 }
