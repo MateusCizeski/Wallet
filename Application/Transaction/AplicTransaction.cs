@@ -80,17 +80,7 @@ namespace Application.Transaction
             var walletSender = _servWallet.GetWalletById(dto.SenderWalletId);
             var walletReceive = _servWallet.GetWalletById(dto.ReceiverWalletId);
 
-            if (walletSender == null)
-            {
-                throw new Exception("Carteira de origem não encontrada.");
-            }
-
-            if (walletReceive == null)
-            {
-                throw new Exception("Carteira de destino não encontrada.");
-            }
-
-            _servTransaction.Transaction(walletSender, walletReceive);
+            _servTransaction.Transaction(walletSender, walletReceive, dto.TransferAmount);
         }
         #endregion
     }

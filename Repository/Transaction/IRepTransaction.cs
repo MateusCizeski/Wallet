@@ -1,4 +1,5 @@
 ﻿using Domain.Transaction;
+using Domain.Wallet;
 
 namespace Repository.Transaction
 {
@@ -9,5 +10,6 @@ namespace Repository.Transaction
         TransactionClass GetTransactionById(int id);
         List<TransactionClass> ListTransactions();
         void DeleteTransaction(int id);
+        void Transaction(WalletClass walletSender, WalletClass walletReceive, decimal transferAmount);
     }
 }
