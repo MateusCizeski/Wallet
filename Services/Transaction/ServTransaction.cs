@@ -1,6 +1,7 @@
 ﻿using Domain.Transaction;
 using Domain.Wallet;
 using Repository.Transaction;
+using Services.Notification;
 
 namespace Services.Transaction
 {
@@ -8,10 +9,12 @@ namespace Services.Transaction
     {
         #region Ctor
         private readonly IRepTransaction _repTransaction;
+        private readonly IServNotification _servNotification;
 
-        public ServTransaction(IRepTransaction repTransaction)
+        public ServTransaction(IRepTransaction repTransaction, IServNotification servNotification)
         {
             _repTransaction = repTransaction;
+            _servNotification = servNotification;
         }
         #endregion
 
@@ -59,7 +62,7 @@ namespace Services.Transaction
         #endregion
 
         #region Transaction
-        public void Transaction(WalletClass walletSender, WalletClass walletReceive, decimal transferAmount)
+        public async void Transaction(WalletClass walletSender, WalletClass walletReceive, decimal transferAmount)
         {
             if(transferAmount <= 0)
             {
@@ -97,6 +100,8 @@ namespace Services.Transaction
             }
 
             _repTransaction.Transaction(walletSender, walletReceive, transferAmount);
+
+            await _servNotification.NotifyTransferAsync(walletReceive.Email, transferAmount);
         }
         #endregion
     }

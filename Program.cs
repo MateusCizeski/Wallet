@@ -15,6 +15,7 @@ using MongoDB.Driver;
 using Application.Wallet.Mapper;
 using Application.WalletType.Mapper;
 using Application.Transaction.Mapper;
+using Services.Notification;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -43,6 +44,7 @@ builder.Services.AddScoped<IRepWalletType, RepWalletType>();
 builder.Services.AddScoped<IServTransaction, ServTransaction>();
 builder.Services.AddScoped<IServWallet, ServWallet>();
 builder.Services.AddScoped<IServWalletType, ServWalletType>();
+builder.Services.AddScoped<IServNotification, ServNotification>();
 
 builder.Services.AddScoped<IAplicTransaction, AplicTransaction>();
 builder.Services.AddScoped<IAplicWallet, AplicWallet>();
