@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Desenvolvimento\\Wallet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|c:\\desenvolvimento\\wallet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|c:\\desenvolvimento\\wallet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89BDA67B-2F25-4D23-8BFC-699FD5F17832}|Services\\Services.csproj|c:\\desenvolvimento\\wallet\\services\\transaction\\servtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89BDA67B-2F25-4D23-8BFC-699FD5F17832}|Services\\Services.csproj|solutionrelative:services\\transaction\\servtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|c:\\desenvolvimento\\wallet\\services\\transaction\\servtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|solutionrelative:services\\transaction\\servtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89BDA67B-2F25-4D23-8BFC-699FD5F17832}|Services\\Services.csproj|c:\\desenvolvimento\\wallet\\services\\notification\\servnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89BDA67B-2F25-4D23-8BFC-699FD5F17832}|Services\\Services.csproj|solutionrelative:services\\notification\\servnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|c:\\desenvolvimento\\wallet\\services\\notification\\servsendgridemailnotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|solutionrelative:services\\notification\\servsendgridemailnotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|c:\\desenvolvimento\\wallet\\services\\notification\\iservsendgridemailnotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CA6D4B1-81E6-4D56-AE81-BF1275163BEE}|Wallet.csproj|solutionrelative:services\\notification\\iservsendgridemailnotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,14 +31,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Desenvolvimento\\Wallet\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-14T11:27:10.265Z",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAhwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T20:43:00.515Z",
               "EditorCaption": ""
             },
             {
@@ -45,20 +49,33 @@
               "RelativeDocumentMoniker": "Services\\Transaction\\ServTransaction.cs",
               "ToolTip": "C:\\Desenvolvimento\\Wallet\\Services\\Transaction\\ServTransaction.cs",
               "RelativeToolTip": "Services\\Transaction\\ServTransaction.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAcwF0AAABgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T11:23:39.706Z",
+              "WhenOpened": "2024-12-14T20:41:54.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IServSendGridEmailNotificationService.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Services\\Notification\\IServSendGridEmailNotificationService.cs",
+              "RelativeDocumentMoniker": "Services\\Notification\\IServSendGridEmailNotificationService.cs",
+              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Services\\Notification\\IServSendGridEmailNotificationService.cs",
+              "RelativeToolTip": "Services\\Notification\\IServSendGridEmailNotificationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T19:10:40.488Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ServNotification.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Services\\Notification\\ServNotification.cs",
-              "RelativeDocumentMoniker": "Services\\Notification\\ServNotification.cs",
-              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Services\\Notification\\ServNotification.cs",
-              "RelativeToolTip": "Services\\Notification\\ServNotification.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Title": "ServSendGridEmailNotificationService.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\Wallet\\Services\\Notification\\ServSendGridEmailNotificationService.cs",
+              "RelativeDocumentMoniker": "Services\\Notification\\ServSendGridEmailNotificationService.cs",
+              "ToolTip": "C:\\Desenvolvimento\\Wallet\\Services\\Notification\\ServSendGridEmailNotificationService.cs",
+              "RelativeToolTip": "Services\\Notification\\ServSendGridEmailNotificationService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA0wA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-14T11:22:37.226Z",
               "EditorCaption": ""

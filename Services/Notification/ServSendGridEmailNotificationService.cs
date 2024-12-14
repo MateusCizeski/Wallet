@@ -1,5 +1,5 @@
-﻿using System.Net;
-using System.Net.Mail;
+﻿using SendGrid;
+using SendGrid.Helpers.Mail;
 
 namespace Services.Notification
 {
@@ -7,7 +7,7 @@ namespace Services.Notification
     {
         private readonly string _sendGridApiKey;
 
-        public SendGridEmailNotificationService(string sendGridApiKey)
+        public ServSendGridEmailNotificationService(string sendGridApiKey)
         {
             _sendGridApiKey = sendGridApiKey;
         }
@@ -15,7 +15,7 @@ namespace Services.Notification
         public async Task NotifyTransferAsync(string receiverEmail, decimal amount)
         {
             var client = new SendGridClient(_sendGridApiKey);
-            var from = new EmailAddress("seuemail@dominio.com", "Nome do Remetente"); // Email e nome do remetente
+            var from = new EmailAddress("seuemail@dominio.com", "Nome do Remetente");
             var subject = "Transferência Recebida!";
             var to = new EmailAddress(receiverEmail);
             var plainTextContent = $"Você recebeu uma transferência de R${amount:F2}. Verifique sua carteira.";

@@ -9,9 +9,9 @@ namespace Services.Transaction
     {
         #region Ctor
         private readonly IRepTransaction _repTransaction;
-        private readonly IServNotification _servNotification;
+        private readonly IServSendGridEmailNotificationService _servNotification;
 
-        public ServTransaction(IRepTransaction repTransaction, IServNotification servNotification)
+        public ServTransaction(IRepTransaction repTransaction, IServSendGridEmailNotificationService servNotification)
         {
             _repTransaction = repTransaction;
             _servNotification = servNotification;
