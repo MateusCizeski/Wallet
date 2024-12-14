@@ -1,6 +1,6 @@
 ﻿namespace Services.Notification
 {
-    public interface IServNotification
+    public interface IServSendGridEmailNotificationService
     {
         Task NotifyTransferAsync(string receiverEmail, decimal amount);
     }

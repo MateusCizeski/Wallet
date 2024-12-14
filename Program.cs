@@ -44,7 +44,7 @@ builder.Services.AddScoped<IRepWalletType, RepWalletType>();
 builder.Services.AddScoped<IServTransaction, ServTransaction>();
 builder.Services.AddScoped<IServWallet, ServWallet>();
 builder.Services.AddScoped<IServWalletType, ServWalletType>();
-builder.Services.AddScoped<IServNotification, ServNotification>();
+builder.Services.AddScoped<IServNotification, ServSendGridEmailNotificationService>();
 
 builder.Services.AddScoped<IAplicTransaction, AplicTransaction>();
 builder.Services.AddScoped<IAplicWallet, AplicWallet>();
