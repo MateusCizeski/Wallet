@@ -19,6 +19,8 @@ using Services.Notification;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+
 var mongoConnectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 var databaseName = "WalletProject";
 

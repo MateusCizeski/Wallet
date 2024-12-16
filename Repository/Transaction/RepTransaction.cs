@@ -71,7 +71,7 @@ namespace Repository.Transaction {
         #endregion
 
         #region Trasaction
-        public void Transaction(WalletClass walletSender, WalletClass walletReceive, decimal transferAmount)
+        public void Transaction(WalletClass walletSender, WalletClass walletReceive, decimal transferAmount, int id)
         {
             var updateSender = Builders<WalletClass>.Update.Set(w => w.Balance, walletSender.Balance - transferAmount);
             var senderResult = _walletCollection.UpdateOne(w => w.Id == walletSender.Id, updateSender);
@@ -91,6 +91,7 @@ namespace Repository.Transaction {
 
             var transaction = new TransactionClass
             {
+                Id = id,
                 SenderWalletId = walletSender.Id,
                 ReceiverWalletId = walletReceive.Id,
                 Amount = transferAmount,

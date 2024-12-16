@@ -80,7 +80,7 @@ namespace Application.Transaction
             var walletSender = _servWallet.GetWalletById(dto.SenderWalletId);
             var walletReceive = _servWallet.GetWalletById(dto.ReceiverWalletId);
 
-            _servTransaction.Transaction(walletSender, walletReceive, dto.TransferAmount);
+            _servTransaction.Transaction(walletSender, walletReceive, dto.TransferAmount, dto.Id);
         }
         #endregion
     }

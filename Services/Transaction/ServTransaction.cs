@@ -62,7 +62,7 @@ namespace Services.Transaction
         #endregion
 
         #region Transaction
-        public async void Transaction(WalletClass walletSender, WalletClass walletReceive, decimal transferAmount)
+        public async void Transaction(WalletClass walletSender, WalletClass walletReceive, decimal transferAmount, int Id)
         {
             if(transferAmount <= 0)
             {
@@ -99,7 +99,7 @@ namespace Services.Transaction
                 throw new Exception("Somente carteiras pessoais podem transferir para carteiras de negócios.");
             }
 
-            _repTransaction.Transaction(walletSender, walletReceive, transferAmount);
+            _repTransaction.Transaction(walletSender, walletReceive, transferAmount, Id);
 
             await _servNotification.NotifyTransferAsync(walletReceive.Email, transferAmount);
         }

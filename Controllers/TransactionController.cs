@@ -110,7 +110,7 @@ namespace Wallet.Controllers
         
         #region Transaction
         [HttpPost]
-        [Route("Transaction/{id}")]
+        [Route("Transaction")]
         public IActionResult Transaction([FromBody] TransactionDTO dto)
         {
             try

@@ -10,6 +10,6 @@ namespace Repository.Transaction
         TransactionClass GetTransactionById(int id);
         List<TransactionClass> ListTransactions();
         void DeleteTransaction(int id);
-        void Transaction(WalletClass walletSender, WalletClass walletReceive, decimal transferAmount);
+        void Transaction(WalletClass walletSender, WalletClass walletReceive, decimal transferAmount, int Id);
     }
 }

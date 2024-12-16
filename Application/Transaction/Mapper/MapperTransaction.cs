@@ -17,6 +17,7 @@ namespace Application.Transaction.Mapper
         {
             var transaction = new TransactionClass
             {
+                Id = dto.Id,
                 SenderWalletId = dto.SenderWalletId,
                 ReceiverWalletId = dto.ReceiverWalletId,
                 Amount = dto.Amount,

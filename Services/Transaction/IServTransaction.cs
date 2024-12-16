@@ -10,6 +10,6 @@ namespace Services.Transaction
         TransactionClass GetTransactionById(int id);
         List<TransactionClass> ListTransactions();
         void DeleteTransaction(int id);
-        void Transaction(WalletClass WalletSender, WalletClass WalletReceive, decimal transferAmount);
+        void Transaction(WalletClass WalletSender, WalletClass WalletReceive, decimal transferAmount, int Id);
     }
 }
