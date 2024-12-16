@@ -104,6 +104,7 @@ namespace Repository.Wallet
         }
         #endregion
 
+        #region MontaWalletEnxuta
         public WalletClass WalletEnxuta(WalletClass wallet)
         {
             var sanitizedWallet = new WalletClass
@@ -119,5 +120,6 @@ namespace Repository.Wallet
 
             return sanitizedWallet;
         }
+        #endregion
     }
 }
