@@ -22,7 +22,8 @@ namespace Application.Wallet.Mapper
                 Email = dto.Email,
                 Balance = dto.Balance,
                 Type = dto.Type,
-                Password = dto.Password
+                Password = dto.Password,
+                WalletTypeId = dto.WalletTypeId
             };
 
             return wallet;

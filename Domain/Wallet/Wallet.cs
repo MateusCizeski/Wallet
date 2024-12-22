@@ -14,6 +14,7 @@ namespace Domain.Wallet
         public string Email { get; set; }
         public string Password { get; set; }
         public decimal Balance { get; set; }
+        public int WalletTypeId { get; set; }
         public EnumWalletType Type { get; set; }
         public WalletTypeClass WalletType { get; set; }
     }

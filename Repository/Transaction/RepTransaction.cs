@@ -16,62 +16,8 @@ namespace Repository.Transaction {
         }
         #endregion
 
-        #region InsertTransaction
-        public TransactionClass InsertTransaction(TransactionClass transaction)
-        {
-            _mongoCollection.InsertOne(transaction);
-            return transaction;
-        }
-        #endregion
-
-        #region EditTransaction
-        public TransactionClass EditTransaction(TransactionClass transaction)
-        {
-            _mongoCollection.ReplaceOne(filter: p => p.Id == transaction.Id, replacement: transaction);
-
-            return transaction;
-        }
-        #endregion
-
-        #region GetTransactionById
-        public TransactionClass GetTransactionById(int id)
-        {
-            var transaction = _mongoCollection.Find(p => p.Id == id).FirstOrDefault();
-
-            if (transaction == null)
-            {
-                throw new Exception("Carteira não encontrada.");
-            }
-
-            return transaction;
-        }
-        #endregion
-
-        #region ListTransactions
-        public List<TransactionClass> ListTransactions()
-        {
-            var transactions = _mongoCollection.Find(_ => true).ToList();
-
-            return transactions;
-        }
-        #endregion
-
-        #region DeleteTransaction
-        public void DeleteTransaction(int id)
-        {
-            var transaction = _mongoCollection.Find(p => p.Id == id).FirstOrDefault();
-
-            if (transaction == null)
-            {
-                throw new Exception("Carteira não encontrada.");
-            }
-
-            _mongoCollection.DeleteOne(p => p.Id == id);
-        }
-        #endregion
-
         #region Trasaction
-        public void Transaction(WalletClass walletSender, WalletClass walletReceive, decimal transferAmount, int id)
+        public void Transaction(WalletClass walletSender, WalletClass walletReceive, decimal transferAmount)
         {
             var updateSender = Builders<WalletClass>.Update.Set(w => w.Balance, walletSender.Balance - transferAmount);
             var senderResult = _walletCollection.UpdateOne(w => w.Id == walletSender.Id, updateSender);
@@ -91,7 +37,6 @@ namespace Repository.Transaction {
 
             var transaction = new TransactionClass
             {
-                Id = id,
                 SenderWalletId = walletSender.Id,
                 ReceiverWalletId = walletReceive.Id,
                 Amount = transferAmount,

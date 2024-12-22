@@ -28,59 +28,13 @@ namespace Application.Transaction
         }
         #endregion
 
-        #region InsertTransaction
-        public TransactionClass InsertTransaction(InsertEditTransactionDTO dto)
-        {
-            var transation = _mapperTransaction.MapperInsertTransaction(dto);
-            transation.Id = _counterService.GetNextSequenceValue("transaction");
-            _servTransaction.InsertTransaction(transation);
-
-            return transation;
-        }
-        #endregion
-
-        #region EditTransaction
-        public TransactionClass EditTransaction(int id, InsertEditTransactionDTO dto)
-        {
-            var transaction = _servTransaction.GetTransactionById(id);
-            _mapperTransaction.MapperEditTransaction(transaction, dto);
-
-            return transaction;
-        }
-        #endregion
-
-        #region GetTransactionById
-        public TransactionClass GetTransactionById(int id)
-        {
-            var transaction = _servTransaction.GetTransactionById(id);
-
-            return transaction;
-        }
-        #endregion
-
-        #region ListTransaction
-        public List<TransactionClass> ListTransaction()
-        {
-            var transactions = _servTransaction.ListTransactions();
-
-            return transactions;
-        }
-        #endregion
-
-        #region DeleteTransaction
-        public void DeleteTransaction(int id)
-        {
-            _servTransaction.DeleteTransaction(id);
-        }
-        #endregion
-
         #region Transaction
         public void Transaction(TransactionDTO dto)
         {
             var walletSender = _servWallet.GetWalletById(dto.SenderWalletId);
             var walletReceive = _servWallet.GetWalletById(dto.ReceiverWalletId);
 
-            _servTransaction.Transaction(walletSender, walletReceive, dto.TransferAmount, dto.Id);
+            _servTransaction.Transaction(walletSender, walletReceive, dto.TransferAmount);
         }
         #endregion
     }
