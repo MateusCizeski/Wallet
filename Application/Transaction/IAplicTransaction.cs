@@ -5,6 +5,6 @@ namespace Application.Transaction
 {
     public interface IAplicTransaction
     {
-        void Transaction(TransactionDTO dto);
+        Task Transaction(TransactionDTO dto);
     }
 }

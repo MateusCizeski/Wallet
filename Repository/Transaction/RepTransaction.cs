@@ -5,19 +5,17 @@ using MongoDB.Driver;
 namespace Repository.Transaction {
     public class RepTransaction : IRepTransaction
     {
-        #region Ctor
-        private readonly IMongoCollection<TransactionClass> _mongoCollection;
+         #region Ctor
         private readonly IMongoCollection<WalletClass> _walletCollection;
 
-        public RepTransaction(IMongoCollection<TransactionClass> mongoCollection, IMongoCollection<WalletClass> walletCollection)
+        public RepTransaction(IMongoCollection<WalletClass> walletCollection)
         {
-            _mongoCollection = mongoCollection;
             _walletCollection = walletCollection;
         }
         #endregion
 
-        #region Trasaction
-        public void Transaction(WalletClass walletSender, WalletClass walletReceive, decimal transferAmount)
+        #region UpdateWalletBalances
+        public void UpdateWalletBalances(WalletClass walletSender, WalletClass walletReceive, decimal transferAmount)
         {
             var updateSender = Builders<WalletClass>.Update.Set(w => w.Balance, walletSender.Balance - transferAmount);
             var senderResult = _walletCollection.UpdateOne(w => w.Id == walletSender.Id, updateSender);
@@ -34,16 +32,6 @@ namespace Repository.Transaction {
             {
                 throw new Exception("Erro ao atualizar o saldo da carteira de destino.");
             }
-
-            var transaction = new TransactionClass
-            {
-                SenderWalletId = walletSender.Id,
-                ReceiverWalletId = walletReceive.Id,
-                Amount = transferAmount,
-                TransactionDate = DateTime.UtcNow
-            };
-
-            _mongoCollection.InsertOne(transaction);
         }
         #endregion
     }

@@ -5,6 +5,6 @@ namespace Services.Transaction
 {
     public interface IServTransaction
     {
-        void Transaction(WalletClass WalletSender, WalletClass WalletReceive, decimal transferAmount);
+        Task Transaction(WalletClass WalletSender, WalletClass WalletReceive, decimal transferAmount);
     }
 }

@@ -1,5 +1,4 @@
-﻿using Domain.Transaction;
-using Domain.Wallet;
+﻿using Domain.Wallet;
 using Repository.Transaction;
 using Services.Notification;
 
@@ -9,23 +8,16 @@ namespace Services.Transaction
     {
         #region Ctor
         private readonly IRepTransaction _repTransaction;
-        private readonly IServSendGridEmailNotificationService _servNotification;
 
-        public ServTransaction(IRepTransaction repTransaction, IServSendGridEmailNotificationService servNotification)
+        public ServTransaction(IRepTransaction repTransaction)
         {
             _repTransaction = repTransaction;
-            _servNotification = servNotification;
         }
         #endregion
 
         #region Transaction
-        public async void Transaction(WalletClass walletSender, WalletClass walletReceive, decimal transferAmount)
+        public async Task Transaction(WalletClass walletSender, WalletClass walletReceive, decimal transferAmount)
         {
-            if(transferAmount <= 0)
-            {
-                throw new Exception("Valor de transferência precisa ser maior que zero.");
-            }
-
             if (walletSender == null)
             {
                 throw new Exception("Carteira de origem não encontrada.");
@@ -56,9 +48,7 @@ namespace Services.Transaction
                 throw new Exception("Somente carteiras pessoais podem transferir para carteiras de negócios.");
             }
 
-            _repTransaction.Transaction(walletSender, walletReceive, transferAmount);
-
-            await _servNotification.NotifyTransferAsync(walletReceive.Email, transferAmount);
+            _repTransaction.UpdateWalletBalances(walletSender, walletReceive, transferAmount);
         }
         #endregion
     }

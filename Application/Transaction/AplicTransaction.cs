@@ -3,6 +3,7 @@ using Application.Transaction.Mapper;
 using Domain.Transaction;
 using MongoDB.Driver;
 using Services.Counter;
+using Services.Notification;
 using Services.Transaction;
 using Services.Wallet;
 
@@ -12,29 +13,33 @@ namespace Application.Transaction
     {
         #region Ctor
         private readonly IServTransaction _servTransaction;
-        private readonly IMapperTransaction _mapperTransaction;
-        private readonly CounterService _counterService;
         private readonly IServWallet _servWallet;
+        private readonly IServSendGridEmailNotificationService _servNotification;
 
         public AplicTransaction(IServTransaction servTransaction, 
-                                IMapperTransaction mapperTransaction, 
-                                CounterService counterService, 
-                                IServWallet servWallet)
+                                IServWallet servWallet,
+                                IServSendGridEmailNotificationService servSendGridEmailNotificationService)
         {
             _servTransaction = servTransaction;
-            _mapperTransaction = mapperTransaction;
-            _counterService = counterService;
             _servWallet = servWallet;
+            _servNotification = servSendGridEmailNotificationService;
         }
         #endregion
 
         #region Transaction
-        public void Transaction(TransactionDTO dto)
+        public async Task Transaction(TransactionDTO dto)
         {
+            if (dto.TransferAmount <= 0)
+            {
+                throw new Exception("O valor da transferência deve ser maior que zero.");
+            }
+
             var walletSender = _servWallet.GetWalletById(dto.SenderWalletId);
             var walletReceive = _servWallet.GetWalletById(dto.ReceiverWalletId);
 
             _servTransaction.Transaction(walletSender, walletReceive, dto.TransferAmount);
+
+            await _servNotification.NotifyTransferAsync(walletReceive.Email, dto.TransferAmount);
         }
         #endregion
     }
